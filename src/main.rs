@@ -1,6 +1,6 @@
 mod print;
 
-use print::print_file;
+// use print;
 use std::{env, process};
 
 fn main() {
