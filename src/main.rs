@@ -1,4 +1,6 @@
 mod print;
+
+use print::print_file;
 use std::{env, process};
 
 fn main() {
@@ -10,7 +12,7 @@ fn main() {
 
     let filename = &args[1];
 
-    if let Err(e) = print_file(filename) {
+    if let Err(e) = print::print_file(filename) {
         eprintln!("Error: {}", e);
         process::exit(1);
     }
